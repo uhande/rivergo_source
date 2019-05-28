@@ -104,5 +104,5 @@ deploy:
   type: git
   repo: 
     coding: git@git.dev.tencent.com:rivergo/rivergo.git
-    github: git@github.com:baronstar/baronstar.github.io.git
-#  branch: master
+#    github: git@github.com:baronstar/baronstar.github.io.git
+  branch: master
