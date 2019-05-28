@@ -4,8 +4,8 @@
 
 # Site
 title: 河流小站
-subtitle:
-description:
+subtitle: 学无止境
+description: 路漫漫其修远兮，吾将上下而求索！
 keywords:
 author: baronstar
 language: zh-CN
@@ -17,7 +17,10 @@ url: https://www.rivergo.cn/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults: 
-
+# 搜索
+search:
+  path: search.xml
+  field: post
 # Directory
 source_dir: source
 public_dir: public
@@ -38,12 +41,32 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+# 代码高亮
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace:
-  
+#自定义代码高亮
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+# 中文链接转拼音
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+#RSS订阅插件配置
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
