@@ -56,7 +56,7 @@ music:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: true
+  enable: false
   showTitle: true
   title: 精彩视频
   url: https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4 # 必填
